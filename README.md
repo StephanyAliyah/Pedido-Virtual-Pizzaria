@@ -26,7 +26,7 @@ O projeto foi estruturado em **três telas (Activities)**, cada uma com um papel
 - **Tela 2:** Escolha de tamanho e pagamento (TamanhoPagamentoActivity) **RadioButton**
 - **Tela 3:** Resumo final do pedido com valor (ResumoPedidoActivity)
 
-Foi utilizada uma **lógica condicional** simples para calcular o valor total com base no tamanho selecionado. O envio dos dados entre telas foi feito com `Intent`, e o texto final do pedido foi montado com `StringBuilder`.
+Foi utilizada uma **lógica condicional** simples para calcular o valor total com base no tamanho selecionado. O envio dos dados entre telas foi feito com `Intent`, e o texto final do pedido foi montado com `ArrayList`.
 
 ---
 
@@ -39,7 +39,7 @@ Foi utilizada uma **lógica condicional** simples para calcular o valor total co
 
 ### 💡 Decisões Estratégicas
 - Organização clara do app em três etapas, separando bem as responsabilidades;
-- Utilização de **StringBuilder** para construir listas de pizzas selecionadas;
+- Utilização de **ArrayList** para construir listas de pizzas selecionadas;
 - Interface limpa, orientada à usabilidade.
 
 ---
