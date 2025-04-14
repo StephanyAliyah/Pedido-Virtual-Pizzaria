@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".ResumoPedidoActivity">
+
+    <!-- Titulo: Resumo do Pedido -->
+    <TextView
+        android:id="@+id/textT2Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumo do Pedido:"
+        android:textSize="28sp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Texto - Resumo do Pedido -->
+
+    <TextView
+        android:id="@+id/textResumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:fontFamily="monospace" />
+    <!--Botão - Voltar (Voltar) -->
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar ao início"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize = "22dp"
+        android:onClick="voltarInicio"/>
+</LinearLayout>
