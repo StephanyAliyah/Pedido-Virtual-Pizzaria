@@ -1,44 +1,71 @@
-# App de Pedido Virtual Pizzaria - Android
+# 🍕 App de Pedido Virtual - Pizzaria
 
-## Descrição do Projeto:
-Este aplicativo permite que o usuário selecione o **tipo de pizza**, o **tamanho** e o **método de pagamento**. O valor é calculado automaticamente e exibido junto ao resumo do pedido.
+## 📌 Descrição do Projeto
+Este aplicativo Android simula um sistema de pedidos em uma pizzaria. O usuário pode escolher os **sabores da pizza** por meio de **CheckBoxes**, definir o **tamanho da pizza** e selecionar o **método de pagamento** usando **RadioButtons**. O app calcula automaticamente o valor com base no tamanho e exibe um **resumo completo** do pedido na última tela.
 
-### **Principais Funcionalidades:**
-- Seleção de pizzas com CheckBox;
-- Escolha de tamanho e pagamento com RadioGroup;
-- Cálculo do valor total;
-- Exibição do resumo completo.
+---
 
-## Informações do Desenvolvedor
+## ✅ Principais Funcionalidades
+- Seleção de sabores via **CheckBox**;
+- Escolha de tamanho (Pequena, Média, Grande) e forma de pagamento com **RadioGroup**;
+- Cálculo automático do valor final com base no tamanho escolhido;
+- Exibição de **resumo do pedido**.
+
+---
+
+## 👩‍💻 Informações da Desenvolvedora
 **Nome:** Stephany Aliyah Guimarães Eurípedes de Paula  
-**Curso:** Ciência da Computação - 3° Semestre
+**Curso:** Ciência da Computação - 3° Semestre  
 
-## Processo de Desenvolvimento
-Este projeto simula um fluxo de compra em uma pizzaria, permitindo ao usuário escolher o sabor, tamanho e forma de pagamento. Utiliza componentes como CheckBox, RadioGroup e TextView, junto com lógica condicional para calcular o valor total. Foi uma ótima oportunidade para praticar a navegação entre telas e o uso de dados dinâmicos no Android.
+---
 
-### **Desafios Superados:**
-- Cálculo correto dos valores com base no tamanho da pizza;
-- Envio e recepção de múltiplos dados entre Activities.
+## 🛠️ Processo de Desenvolvimento
+O projeto foi estruturado em **três telas (Activities)**, cada uma com um papel específico no processo de pedido:
 
-### **Decisões Estratégicas:**
-- Separação clara por funcionalidades em cada tela;
-- Uso de `StringBuilder` para montar pedidos compostos;
-- Interface clara e objetiva.
+- **Tela 1:** Seleção de sabores (MainActivity) **CheckBox**
+- **Tela 2:** Escolha de tamanho e pagamento (TamanhoPagamentoActivity) **RadioButton**
+- **Tela 3:** Resumo final do pedido com valor (ResumoPedidoActivity)
 
-## Como Executar o Aplicativo
-1. **Baixar o APK**: [Download do APK](./app-debug.apk)  Ou ir na pasta src.
-2. Transferir o arquivo para um dispositivo Android.
-3. Instalar e abrir o aplicativo.
-4. Inserir os dados solicitados (altura e peso) e obter o resultado do IMC.
+Foi utilizada uma **lógica condicional** simples para calcular o valor total com base no tamanho selecionado. O envio dos dados entre telas foi feito com `Intent`, e o texto final do pedido foi montado com `StringBuilder`.
 
-## Estrutura do Repositório
+---
+
+### 🚧 Desafios Superados
+- Garantir o envio correto de **múltiplos dados entre telas**;
+- Evitar que o usuário avance sem selecionar opções obrigatórias;
+- Cálculo dinâmico do valor com base no tamanho da pizza.
+
+---
+
+### 💡 Decisões Estratégicas
+- Organização clara do app em três etapas, separando bem as responsabilidades;
+- Utilização de **StringBuilder** para construir listas de pizzas selecionadas;
+- Interface limpa, orientada à usabilidade.
+
+---
+
+## ▶️ Como Executar o Aplicativo
+1. **Baixe o APK**: [Download do APK] ou acesse a pasta `src/Pizzaria.zip`;
+2. Transfira o arquivo para um dispositivo Android;
+3. Instale o aplicativo;
+4. Execute o app, selecione os sabores, escolha o tamanho e a forma de pagamento para visualizar o resumo.
+
+## 📸 Imagens do Projeto
+As imagens utilizadas nas telas estão disponíveis na pasta `/images`.
+
+
+
+## 📁 Estrutura do Repositório
 ```
-Pizzaria/
-├── app-debug.apk    # Arquivo compilado do aplicativo
-├── projeto.zip      # Código-fonte do projeto(pasta src/Pizzaria.zip)
-├── README.md        # Documentação do projeto
+src/pizzaria.apk/zip
+├── app-debug.apk       # APK compilado
+├── projeto.zip         # Código-fonte do projeto
+├── README.md           # Documentação do projeto
 ```
 
-## Tecnologias Utilizadas
-- **Java** para a lógica de programação (linguagem utilizada);
-- **Android Studio** como ambiente de desenvolvimento;
+---
+
+## 🧰 Tecnologias Utilizadas
+- **Java** (lógica de programação);
+- **Android Studio** (ambiente de desenvolvimento));
+- **Componentes usados**: CheckBox, RadioGroup, Button, Intent, TextView
