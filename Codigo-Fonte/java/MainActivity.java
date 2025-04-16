@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         cbMarguerita = findViewById(R.id.cbMarguerita);
         cbPortuguesa = findViewById(R.id.cbPortuguesa);
 
-        // Ajusta o layout para não ficar escondido atrás da barra de status ou navegação
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
